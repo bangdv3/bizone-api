@@ -8,7 +8,7 @@ require('./_init/config')();
 require('./_init/validation')();
  
 // START express app
-const port = 5000;
+const port = process.env.PORT || 80;
 const server = app.listen(port, ()=> console.log(`Server is listening at ${port} ...`));
 
 module.exports = server;
