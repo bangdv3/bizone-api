@@ -1,0 +1,7 @@
+{
+    "jwtPrivateKey" : "jwtPrivateKeyAAA",
+    "dbserver"      : "cluster0-bp969.mongodb.net",
+    "dbname"        : "fcc",
+    "dbuser"        : "dbtesting",
+    "dbpass"        : "dbtesting2020"
+}
