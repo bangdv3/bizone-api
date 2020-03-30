@@ -5,11 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test jest --watchAll --runInBand --verbose",
-    "start": "NODE_ENV=development nodemon src/index.js",
+    "start": "node src/index.js",
     "nodemon": "nodemon index.js"
   },
   "author": "bangdev",
   "license": "ISC",
+  "engines": {
+    "node": "12.16.1"
+  },
   "dependencies": {
     "bcrypt": "^4.0.1",
     "config": "^3.3.0",
