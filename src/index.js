@@ -6,6 +6,7 @@ require('./_init/route')(app);
 require('./_init/db')();
 require('./_init/config')();
 require('./_init/validation')();
+require('./_init/prod')(app);
  
 // START express app
 const port = process.env.PORT || 80;
