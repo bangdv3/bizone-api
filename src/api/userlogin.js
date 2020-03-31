@@ -33,7 +33,14 @@ router.post('/api/auth', async (req, res) =>{
     if (!isLogged) return res.status(400).send('Invalid email or password 2');
 
     const token = user.genAuthToken();
-    res.send(token);
+    const jsonReturn = {
+        user: {
+            name: user.name, 
+            email: user.email
+        },
+        token: token
+    }
+    res.send(jsonReturn);
 })
 
 module.exports = router
