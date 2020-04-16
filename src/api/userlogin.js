@@ -20,6 +20,7 @@ function validateLoginRequest(reqBody){
         password: Joi.string().min(5).max(1024).required(),
     };
     return valiUser = Joi.validate(reqBody, schema); 
+     
 }
 
 router.post('/api/auth', async (req, res) =>{
